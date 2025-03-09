@@ -13,20 +13,30 @@ This project demonstrates how to use SQLite Cloud with yfinance to fetch, store,
 
 ## Configuration
 
-1. Copy `.env.sample` to `.env` and set your SQLite Cloud connection URL:
+1. Create a virtual environment:
+   ```
+   python -m venv .venv  # On macOS/Linux/Windows
+   ```
+
+2. Activate the virtual environment:
+   ```
+   source .venv/bin/activate  # On macOS/Linux
+   .venv\Scripts\activate     # On Windows
+   ```
+
+3. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Copy `.env.sample` to `.env` and set your SQLite Cloud connection URL:
    ```
    cp .env.sample .env
    ```
 
-2. Edit the `.env` file with your actual credentials:
+5. Edit the `.env` file with your actual credentials:
    ```
    SQLITECLOUD_URL=sqlitecloud://username:password@host:port/database
-   ```
-
-3. Activate the virtual environment:
-   ```
-   source .venv/bin/activate  # On macOS/Linux
-   .venv\Scripts\activate     # On Windows
    ```
 
 ## Files
